@@ -1,5 +1,7 @@
-# ENDSAR Twitter Bot
+# Free Senegal Twitter Bot
 
-This Bot is made to retweet anything related to EndSar. [https://twitter.com/endsarsbot\_](https://twitter.com/endsarsbot_)
+A Twitter bot that automatically likes and retweets from the hashtags #FreeSenegal #SnResistance #FreeSonko. [https://twitter.com/freesenegalbot](https://twitter.com/freesenegalbot)
 
-Created By: [https://twitter.com/iamnotstatic ](https://twitter.com/iamnotstatic)
+Created By: [https://twitter.com/Madiodio_Gaye ](https://twitter.com/Madiodio_Gaye)
+
+All courtesy from https://github.com/iamnotstatic/endsar-twitter-bot

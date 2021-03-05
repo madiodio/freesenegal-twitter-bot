@@ -1,4 +1,4 @@
-const Twit = require('twit');
+const Twit = require("twit");
 
 const T = new Twit({
   consumer_key: process.env.APPLICATION_CONSUMER_KEY_HERE,
@@ -7,24 +7,23 @@ const T = new Twit({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET_HERE,
 });
 
-
 // start stream and track tweets
-const stream = T.stream('statuses/filter', {
-  track: ['#SARSMUSTEND', '#EndSWAT', '#EndSARS','#EndPoliceBrutality']
+const stream = T.stream("statuses/filter", {
+  track: ["#FreeSenegal", "#SnResistance", "#FreeSonko"],
 });
 
 // use this to log errors from requests
-const  responseCallback =(err, data, response) => {
+const responseCallback = (err, data, response) => {
   //console.log(data.errors);
-}
+};
 
 // let waitTime = 60 * 60 * 1000;
 
 // event handler
 
-stream.on('tweet', (tweet) => {
+stream.on("tweet", (tweet) => {
   // retweet
-  T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
+  T.post("statuses/retweet/:id", { id: tweet.id_str }, responseCallback);
   // like
-  T.post('favorites/create', { id: tweet.id_str }, responseCallback);
+  T.post("favorites/create", { id: tweet.id_str }, responseCallback);
 });
