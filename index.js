@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get("/", function (req, res) {
   res.json({
-    message: "Welcome to FreeSenegal BOt",
+    message: "Welcome to Free Senegal Bot",
     link: "https://twitter.com/freesenegalbot",
   });
 });
