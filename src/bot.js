@@ -6,7 +6,6 @@ const T = new Twit({
   access_token: process.env.ACCESS_TOKEN_HERE,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET_HERE,
 });
-console.log(process.env.APPLICATION_CONSUMER_KEY_HERE);
 
 // start stream and track tweets
 const stream = T.stream("statuses/filter", {
@@ -15,7 +14,7 @@ const stream = T.stream("statuses/filter", {
 
 // use this to log errors from requests
 const responseCallback = (err, data, response) => {
-  //console.log(data.errors);
+  console.log(data.errors);
 };
 
 // let waitTime = 60 * 60 * 1000;
