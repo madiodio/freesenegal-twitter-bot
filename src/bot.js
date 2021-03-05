@@ -14,7 +14,7 @@ const stream = T.stream("statuses/filter", {
 
 // use this to log errors from requests
 const responseCallback = (err, data, response) => {
-  console.log(data);
+  //console.log(data.errors);
 };
 
 // let waitTime = 60 * 60 * 1000;
