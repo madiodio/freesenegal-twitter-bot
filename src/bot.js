@@ -6,6 +6,7 @@ const T = new Twit({
   access_token: process.env.ACCESS_TOKEN_HERE,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET_HERE,
 });
+console.log(process.env.APPLICATION_CONSUMER_KEY_HERE);
 
 // start stream and track tweets
 const stream = T.stream("statuses/filter", {
