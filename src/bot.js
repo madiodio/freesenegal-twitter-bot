@@ -27,7 +27,8 @@ const responseCallback = (err, data, response) => {
 };
 
 const responseCallbackLikes = (err, data, response) => {
-  console.log(data);
+  console.log(data.error);
+  console.log(data.errors);
 };
 
 // let waitTime = 60 * 60 * 1000;
