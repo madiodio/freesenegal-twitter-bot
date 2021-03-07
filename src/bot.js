@@ -20,7 +20,14 @@ const stream = T.stream("statuses/filter", {
 
 // use this to log errors from requests
 const responseCallback = (err, data, response) => {
-  console.log({ data }, { response });
+  if (data.error || data.errors) {
+    console.log(data);
+  }
+  console.log(data, { response });
+};
+
+const responseCallbackLikes = (err, data, response) => {
+  console.log(data);
 };
 
 // let waitTime = 60 * 60 * 1000;
@@ -31,5 +38,5 @@ stream.on("tweet", (tweet) => {
   // retweet
   T.post("statuses/retweet/:id", { id: tweet.id_str }, responseCallback);
   // like
-  T.post("favorites/create", { id: tweet.id_str }, responseCallback);
+  T.post("favorites/create", { id: tweet.id_str }, responseCallbackLikes);
 });
