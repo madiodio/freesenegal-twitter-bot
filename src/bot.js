@@ -16,12 +16,11 @@ const stream = T.stream("statuses/filter", {
     "#Sunu2012",
     "#WhatsHappeningInSenegal",
   ],
-  exclude_replies: true,
 });
 
 // use this to log errors from requests
 const responseCallback = (err, data, response) => {
-  console.log(data);
+  console.log({ data }, { response });
 };
 
 // let waitTime = 60 * 60 * 1000;
