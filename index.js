@@ -2,6 +2,8 @@ const express = require("express");
 
 require("./src/bot");
 
+require("newrelic");
+
 const app = express();
 
 const PORT = process.env.PORT || 5000;
