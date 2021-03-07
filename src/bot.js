@@ -23,7 +23,6 @@ const responseCallback = (err, data, response) => {
   if (data.error || data.errors) {
     console.log(data);
   }
-  console.log(data, { response });
 };
 
 const responseCallbackLikes = (err, data, response) => {
