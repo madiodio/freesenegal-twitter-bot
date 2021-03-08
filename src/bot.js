@@ -11,10 +11,10 @@ const T = new Twit({
 const stream = T.stream("statuses/filter", {
   track: [
     "#FreeSenegal",
+    "#SenegalIsBleeding",
+    "#WhatsHappeningInSenegal",
     "#SnResistance",
     "#FreeSonko",
-    "#Sunu2012",
-    "#WhatsHappeningInSenegal",
   ],
 });
 
