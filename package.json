@@ -12,7 +12,7 @@
     "#SnResistance",
     "#FreeSonko"
   ],
-  "author": "Abdulfatai Suleiman",
+  "author": "Madiodio Gaye <papigaye1@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "env-cmd": "^10.1.0",
