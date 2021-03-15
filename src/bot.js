@@ -10,14 +10,13 @@ const T = new Twit({
 // start stream and track tweets
 const stream = T.stream("statuses/filter", {
   track: [
-    "#FreeSenegal -min_retweets:10",
+    "#FreeSenegal",
     "#SenegalIsBleeding",
     "#WhatsHappeningInSenegal",
     "#SnResistance",
     "#FreeSonko",
   ],
   exclude_replies: true,
-  q: "#FreeSenegal min_faves:5 min_retweets:10",
 });
 
 // use this to log errors from requests
